@@ -23,7 +23,7 @@ function App() {
   };
 
   return (
-    <Router>
+    <Router basename="/home-service-web">
       <div>
         <NavigationBar scrollToSection={scrollToSection} />
         <Routes>
