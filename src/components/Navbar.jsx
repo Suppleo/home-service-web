@@ -17,9 +17,12 @@ function NavigationBar({ scrollToSection }) {
               How It Works
             </Nav.Link>
             <Nav.Link onClick={() => scrollToSection("testimonials")}>
-              Reviews
+              Testimonials
             </Nav.Link>
             <Nav.Link onClick={() => scrollToSection("cta")}>Contact</Nav.Link>
+            <Nav.Link onClick={() => scrollToSection("benefits")}>
+              Benefits
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

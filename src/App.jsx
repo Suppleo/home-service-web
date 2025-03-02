@@ -7,6 +7,7 @@ import HowItWorks from "./components/HowItWorks";
 import Testimonials from "./components/Testimonials";
 import CTA from "./components/CTA";
 import Footer from "./components/Footer";
+import Benefits from "./components/Benefits";
 import NavigationBar from "./components/Navbar";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
     howItWorks: useRef(null),
     testimonials: useRef(null),
     cta: useRef(null),
+    benefits: useRef(null),
   };
 
   const scrollToSection = (sectionName) => {
@@ -33,6 +35,9 @@ function App() {
               <>
                 <div ref={sectionRefs.hero} id="hero">
                   <Hero />
+                </div>
+                <div ref={sectionRefs.benefits} id="benefits">
+                  <Benefits />
                 </div>
                 <div ref={sectionRefs.services} id="services">
                   <Services />
